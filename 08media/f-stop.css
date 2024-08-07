@@ -1,0 +1,349 @@
+/* Prevent problems with different browsers */
+* {box-sizing: border-box;}
+
+body {
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    
+}
+
+/* Header stuff here */
+
+header {
+    background-color: #232426;
+    padding: 1rem 2vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+header div {
+    padding-left: 1vw;
+}
+
+header h1 {
+    margin: 0;
+    color: #ffffff;
+}
+
+header p {
+    margin: 0;
+    color: #ffffff;
+}
+
+/* Nav stuff goes here */
+
+/* BIG screens */
+@media only screen and (min-width: 601px) {
+    nav {
+            background-color: #35403A;
+            width: 100%;
+        }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0 2vw;
+        margin: 0;
+        display: flex;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: #BFBFB8;
+        font-weight: 700;
+        display: block;
+        padding: .83rem 2rem;
+    }
+
+    nav li.active a {
+        background-color: #BFBFB8;
+        color: #35403A;
+    }
+
+    nav a:hover {
+        color: #fff;
+    }
+
+
+} /* End of the media query */
+
+
+
+/* small screens */
+@media only screen and (max-width: 600px) {
+    nav {
+        background-color: #35403A;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style: none;
+    }
+
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: 1px solid #aaa;
+        color: #BFBFB8;
+    }
+
+    nav li.active a {
+        background-color: #BFBFB8;
+        color: #35403A;
+        background-image: linear-gradient(#BFBFB8, #9b9b96);
+    }
+
+
+
+} /* End of the media query */
+
+
+/* Stuff for the main */
+
+main {
+    padding: 1rem 2vw;
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+main h1 {
+    color: #35403A;
+    margin-bottom: 0;
+}
+
+main h2 {
+    color: #35403A;
+    margin-bottom: .2rem;
+}
+
+main h3 {
+    color: #35403A;
+    margin-bottom: .2rem;
+}
+
+main p {
+    color: #232625;
+    margin: 0 0 .3rem 0;
+}
+
+main ol {
+    padding: .5rem 3vw;
+    background-color: #BFBFB8;
+    border-radius: 5px;
+    margin-top: 0;
+}
+
+main dl dt {
+    color: #4C594F;
+    font-style: italic;
+    font-weight: 700;
+}
+
+main dl dd {
+    color: #35403A;
+    font-size: .9rem;
+}
+
+main ul {
+    list-style-type:disc;
+    padding: .5rem 3vw;
+    background-color: #BFBFB8;
+    border-radius: 5px;
+    margin-top: 0;
+}
+
+main li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main a {
+    color: #4C594F;
+}
+
+main a:hover {
+    color: #BFBFB8;
+}
+
+.hero {
+    width: 100%;
+    margin: 0;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+figure.home-image {
+    width: 45%;
+    float: right;
+    
+}
+
+figure.home-image img {
+    width: 100%;
+    height: auto;
+}
+
+.home-image figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #4C594F;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #4C594F;
+}
+
+.gallery img:hover {
+    box-shadow: 0px 0px 10px black;
+}
+
+.myForm fieldset {
+    background-color: #bfbfb848;
+    border: none;
+    padding: .7rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.myForm fieldset legend {
+    background-color: #4C594F;
+    border-radius: 5px;
+    padding: .2rem;
+    color: white;
+}
+
+.myForm fieldset label {
+    margin: .5rem;
+}
+
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm textarea{
+    display: block;
+}
+
+.myForm select, .myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm textarea {
+    border: 1px solid #232625;
+    border-bottom: 4px solid #232625;
+    padding: .3rem;
+    width: 250px;
+    border-radius: 5px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+}
+
+.myForm textarea {
+    height: 6rem;
+}
+
+.myForm p {
+    font-style: italic;
+    font-weight: 100;
+}
+
+.myForm :required {
+    border-bottom: 4px solid rgb(176, 68, 68);
+}
+
+.myForm :required:valid{
+    border-bottom: 3px solid #35403A;
+}
+
+.myForm [type=submit] {
+    background-color: #35403A;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+    font-size: 1.3rem;
+}
+
+.myForm [type=submit]:active{
+    background-color: #35403a69;
+    color: black;
+}
+
+table.our-creators {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.our-creators th {
+    background-color: #4C594F;
+    color: white;
+    padding: .5rem 2vw;
+    text-align: left;
+}
+
+table.our-creators td {
+    color: #4C594F;
+    padding: .4rem 2vw;
+    text-align: left;
+}
+
+table.our-creators tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
+table.our-creators tr:hover {
+    background-color: #4c594f25;
+}
+
+
+/* Footer stuff here */
+footer {
+    background-color: #232625;
+    text-align: center;
+    color: #ffffff;
+    padding: 1rem 0;
+    font-size: .8rem;
+    clear:both;
+}
+
+footer a {
+    color: #BFBFB8;
+}
+
+footer a:hover {
+    color: #4C594F;
+}
+
+address {
+    margin: auto;
+    text-align: center;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid #A4A69C;
+    border-radius: .5rem;
+}
+
+main{
+    max-width: 64rem;
+    margin: 0 auto;
+}
